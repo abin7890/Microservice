@@ -12,7 +12,7 @@ pipeline {
                     namespace: 'webapps',
                     serverUrl: 'https://5DC366103DD50BBAC8A8988D16404C42.gr7.ap-south-1.eks.amazonaws.com'
                 ]]) {
-                    sh "kubectl apply -f deployment-service.yaml"
+                    sh "kubectl apply -f deployment-service.yml"
                     sleep 60
                 }
             }
